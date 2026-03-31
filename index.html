@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+             <div class="text">
+
+            <nav>
+                <a href="index.html">Солнечная система</a>
+                <a href="page2.html">За пределами видимости</a>
+                <a href="page3.html">Человек и космос</a>
+            </nav>
+
+            <h1>Солнечная система</h1>
+            <p>- это гравитационно-связанная система, состоящая из центральной звезды и всех естественных космических объектов, обращающихся вокруг неё.</p>
+
+            </div>
+
+            <div class="solar-system">
+                
+                <div class="planet-item sun-item">
+    <div class="planet sun"></div>
+    <div class="planet-info">
+        <h2>Солнце</h2>
+        <p>Центральная звезда Солнечной системы. Составляет 99.86% массы всей системы. Температура поверхности ~5500°C.</p>
+    </div>
+</div>
+
+                
+  <div class="planet-item">
+    <div class="planet mercury"></div>
+    <div class="planet-info">
+      <h2>Меркурий</h2>
+      <p>Самая близкая к Солнцу планета. Поверхность покрыта кратерами, очень тонкая атмосфера.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet venus"></div>
+    <div class="planet-info">
+      <h2>Венера</h2>
+      <p>Вторая планета от Солнца. Обладает плотной углекислотной атмосферой, температура до 475°C.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet earth"></div>
+    <div class="planet-info">
+      <h2>Земля</h2>
+      <p>Третья планета. Единственное известное тело с жидкой водой и жизнью.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet mars"></div>
+    <div class="planet-info">
+      <h2>Марс</h2>
+      <p>Красная планета, покрытая оксидом железа. Есть самый высокий вулкан в Солнечной системе.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet jupiter"></div>
+    <div class="planet-info">
+      <h2>Юпитер</h2>
+      <p>Газовый гигант, самая большая планета. Имеет 79 спутников и Большое красное пятно.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet saturn"></div>
+    <div class="planet-info">
+      <h2>Сатурн</h2>
+      <p>Известен своими кольцами из льда и пыли. Плотность меньше, чем у воды.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet uranus"></div>
+    <div class="planet-info">
+      <h2>Уран</h2>
+      <p>Ледяной гигант, вращается «на боку». Имеет кольца и 27 спутников.</p>
+    </div>
+  </div>
+  <div class="planet-item">
+    <div class="planet neptune"></div>
+    <div class="planet-info">
+      <h2>Нептун</h2>
+      <p>Самая ветреная планета, голубой цвет из-за метана в атмосфере.</p>
+    </div>
+  </div>
+</div>
+
+<script src="page1.js"></script>
+
+
+<script>
+  const starsContainer = document.createElement('div');
+  starsContainer.className = 'twinkling-stars';
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 5 + 's';
+    star.style.width = star.style.height = (Math.random() * 3 + 1) + 'px';
+    starsContainer.appendChild(star);
+  }
+  document.body.appendChild(starsContainer);
+</script>
+
+    </body> 
+</html>
